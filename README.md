@@ -4,6 +4,11 @@
 -Header
 -Login Form
 -SignIn/SignUp done
+-Routing done
+-Form validation
+-UseRefHook
+-Firebase setup 
+-deploying our app to production
 
 
 # Features
