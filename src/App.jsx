@@ -1,10 +1,10 @@
+import Body from "./components/Body"
+
 function App() {
 
   return (
     <>
-    <h1 className="text-2xl text-red-400">
-      lets build our netflix gpt
-     </h1>
+    <Body />
     </>
   )
 }
