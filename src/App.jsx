@@ -12,26 +12,7 @@ import { setLogout, setToken, setUser } from "./utils/store/AuthSlice";
 
 
 const App = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      dispatch(
-        setUser({
-          email: user.email,
-          name: user.displayName,
-          uid: user.uid,
-          emailVerified: user.emailVerified,
-        })
-      );
-      dispatch(setToken(user.accessToken));
-    } 
-    else{
-      dispatch(setLogout());
-    }  
-  }
-  )
-  },[dispatch]);
+  
   const appRouter = createBrowserRouter([
     {
       path: "/",

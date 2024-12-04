@@ -1,8 +1,8 @@
 import Header from "../components/Header";
-import { useRouteSafe } from "../utils/hooks/useRouteSafe";
+
 
 const Browse = () => {
-  useRouteSafe(); 
+ 
   return (
     <div>
       <Header />

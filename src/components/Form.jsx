@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { auth } from "../utils/FIrebase";
 
 const LoginForm = ({ signup }) => {
-  const nevigate = useNavigate();
+
   const [error, setError] = useState(null);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -42,9 +42,7 @@ const LoginForm = ({ signup }) => {
               transition: Bounce,
             });
 
-            setInterval(() => {
-              nevigate("/signin");
-            }, 500);
+            
           }
         } catch (error) {
           toast.error(error.message, {
@@ -78,7 +76,7 @@ const LoginForm = ({ signup }) => {
               theme: "dark",
               transition: Bounce,
             });
-            nevigate("/browse");
+          
           }
         } catch (error) {
           toast.error(error.message, {
